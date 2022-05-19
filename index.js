@@ -6,3 +6,7 @@ function increment(){
     count = count + 1
     document.getElementById("counter").innerText = count //sets the number to 5
 }
+
+function save(){
+
+}
