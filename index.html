@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/573d9416cc.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Counter APP</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>People who entered the train:</h1>
+      <h1>People who entered the train:</h1>
+      <div class="row">
         <h2 id="counter">0</h2>
-        <button class="increment-btn" onclick="increment()">INCREMENT</button>
-        <button class="save-btn" onclick="save()">SAVE</button>
+        <!--<button class="font-btn"><i class="fa-solid fa-trash"></i></button>-->
+        <a href='javascript:deleteNumber()' class="font-btn"><i class="fa-solid fa-trash"></i></a>
+      </div>
+      <button class="increment-btn" onclick="increment()">INCREMENT</button>
+      <button class="save-btn" onclick="save()">SAVE</button>
+      <p id="entries">Previous saved entries:</p>
 
-        <figure>
-            <img src="./assets/train.gif" alt="" loop="infinite">
-        </figure>
+      <figure>
+        <img src="./assets/train.gif" alt="" loop="infinite" />
+      </figure>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

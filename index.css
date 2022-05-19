@@ -18,6 +18,14 @@
     text-align: center;
 }
 
+.row {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 h1, h2{
     margin: 12px 0;
 }
@@ -62,3 +70,21 @@ button{
     transform: translateY(4px);
 }
 
+.font-btn{
+    font-size: 24px;
+    color: red;
+    background-color: transparent;
+}
+
+.font-btn:hover{
+    color:rgb(245, 89, 89);
+}
+
+.font-btn:active{
+    color:rgb(245, 89, 89);
+    transform: translateY(4px);
+}
+
+#entries {
+    margin-top: 12px;
+}
